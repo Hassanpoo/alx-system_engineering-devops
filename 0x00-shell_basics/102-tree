@@ -1,2 +1,2 @@
 #!/bin/bas
-mkdir -p welcome/to/school
+mkdir  welcome{,/to{,/school}}
