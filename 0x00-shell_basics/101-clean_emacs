@@ -1,0 +1,2 @@
+#!/bin/bash
+# Delete files ending with ~ for file in *~; do   if  [ -f "$file" ]; then rm  "$file"  fi done
