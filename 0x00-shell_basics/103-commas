@@ -1,1 +1,2 @@
-ls -pa1 | awk '{ORS = (NR%2 == 0)? ", " : "\n"}; 1' | sed 's/,$/\n/'
+#!/bin/bash
+ls -pa1 | awk '{ORS = (NR%2 == 0)? ", " : "\n"}; 1' | sed 's/,$/\n/i''
