@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | awk 'BEGIN{ORS=","} {if ($0 ~ /^\.+$/) print $0; else print $0"/"} END{print ""}'
+ls -1a | awk '{printf "%s%s", (NR>2?", ":""), ($0~/^\.*$/?$0:$0"/")} END{print ""}'
