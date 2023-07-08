@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -pa1 | awk '{ORS = (NR%2 == 0)? ", " : "\n"}; 1' | sed 's/,$/\n/' 103-commas
-
+ls -1a | awk 'BEGIN{ORS=","} {if ($0 ~ /^\.+$/) print $0; else print $0"/"} END{print ""}'
